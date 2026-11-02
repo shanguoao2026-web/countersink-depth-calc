@@ -1,0 +1,16 @@
+{
+  "name": "countersink-depth-calc",
+  "version": "1.0.0",
+  "description": "Calculate countersink depth, diameter, and cone-face leg length.",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "engines": { "node": ">=18" },
+  "bin": { "countersink-depth-calc": "dist/cli.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepack": "npm run build"
+  },
+  "devDependencies": { "@types/node": "^18.19.0", "typescript": "^5.0.0" }
+}
